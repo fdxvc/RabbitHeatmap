@@ -1,0 +1,17 @@
+{
+  "name": "Trading Rabbit",
+  "version": "1.0.0",
+  "description": "TradingView Heatmap & Chart Scroller",
+  "author": "User",
+  "permissions": ["storage", "network"],
+  "entry": "src/index.ts",
+  "display": {
+    "width": 240,
+    "height": 320,
+    "theme": "dark"
+  },
+  "hardware": {
+    "scrollWheel": true,
+    "button": true
+  }
+}
