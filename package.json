@@ -1,0 +1,17 @@
+{
+  "name": "trading-rabbit",
+  "version": "1.0.0",
+  "description": "TradingView Widget Scroller for Rabbit R1",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "r1-dev",
+    "build": "r1-build",
+    "deploy": "r1-deploy"
+  },
+  "dependencies": {
+    "@rabbit-r1/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
