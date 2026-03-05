@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 240px;
+  height: 320px;
+  overflow: hidden;
+}
+
+/* Heatmap Styles */
+.heatmap-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.tv-widget {
+  width: 240px;
+  height: 320px;
+  transform: scale(0.95);
+  transform-origin: top left;
+}
+
+.overlay-hint {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  color: #00d4ff;
+  border: 1px solid #00d4ff;
+}
+
+/* Chart Scroller Styles */
+.chart-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.symbol-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: linear-gradient(90deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-bottom: 1px solid #333;
+}
+
+.symbol-badge {
+  background: #2962ff;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.counter {
+  font-size: 10px;
+  color: #888;
+}
+
+.tv-chart-widget {
+  flex: 1;
+  overflow: hidden;
+}
+
+.scroll-indicator {
+  padding: 4px 8px;
+  background: #1a1a1a;
+}
+
+.scroll-bar {
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.scroll-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #2962ff, #00d4ff);
+  transition: width 0.3s ease;
+}
+
+/* Manager Styles */
+.manager-container {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.manager-container h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+
+.watchlist-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.watchlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 4px;
+  background: #1a1a1a;
+  border-radius: 6px;
+  border: 1px solid #333;
+  transition: all 0.2s;
+}
+
+.watchlist-item.selected {
+  border-color: #2962ff;
+  background: #0d1b3e;
+}
+
+.sym-name {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.delete-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.manager-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: white;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.action-btn.primary {
+  background: #2962ff;
+}
+
+.hint {
+  font-size: 9px;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Input Mode Styles */
+.input-container {
+  padding: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-container h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00d4ff;
+}
+
+.input-display {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #2962ff;
+}
+
+.input-prefix {
+  color: #888;
+  font-size: 12px;
+}
+
+.input-value {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.keyboard-hint {
+  font-size: 10px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.input-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Status Bar */
+.status-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 4px 8px;
+  font-size: 9px;
+  color: #888;
+  border-top: 1px solid #333;
+  text-align: center;
+}
